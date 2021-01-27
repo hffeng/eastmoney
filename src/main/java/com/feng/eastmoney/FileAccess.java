@@ -10,8 +10,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 /*
+  crawler the information from web
   @Author fenghf
   @Date 2021/1/27
+  
 */
 public class FileAccess {
 

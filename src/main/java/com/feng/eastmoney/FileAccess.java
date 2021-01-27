@@ -10,6 +10,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @Date 2021/1/27
+ *
+ */
 public class FileAccess {
 	
 	 public static void method1(String file, String conent) {     

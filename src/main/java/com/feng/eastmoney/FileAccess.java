@@ -16,6 +16,7 @@ import java.util.Date;
   
 */
 public class FileAccess {
+	static DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	 public static void method1(String file, String conent) {     
 	        BufferedWriter out = null;     
@@ -58,10 +59,9 @@ public class FileAccess {
 	        }   
 	    }     
 
-	public static void main(String[] args) {
-		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    	Date d = new Date();
-    	System.out.println(df.format(d));
+	public static void main(String[] args) {	
+    	        Date d = new Date();
+    	        System.out.println(df.format(d));
 	}
 
 }

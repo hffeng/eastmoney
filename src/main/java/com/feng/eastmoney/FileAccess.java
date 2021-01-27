@@ -1,5 +1,8 @@
 package com.feng.eastmoney;
 
+import com.sun.org.slf4j.internal.Logger;
+import com.sun.org.slf4j.internal.LoggerFactory;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -17,7 +20,11 @@ import java.util.Date;
 */
 public class FileAccess {
 
-	 public static void method1(String file, String conent) {     
+	 private static Logger logger = LoggerFactory.getLogger(FileAccess.class);
+	 public static void method1(String file, String conent) {
+	 	    if(logger.isDebugEnabled()){
+	 	    	logger.debug("begin to run the [{}]",FileAccess.class.toString());
+			}
 	        BufferedWriter out = null;     
 	        try {     
 	            out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file, true)));     

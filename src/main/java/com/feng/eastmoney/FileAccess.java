@@ -19,6 +19,7 @@ import java.util.Date;
   
 */
 public class FileAccess {
+	static DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	 private static Logger logger = LoggerFactory.getLogger(FileAccess.class);
 	 public static void method1(String file, String conent) {
@@ -65,10 +66,9 @@ public class FileAccess {
 	        }   
 	    }     
 
-	public static void main(String[] args) {
-		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    	Date d = new Date();
-    	System.out.println(df.format(d));
+	public static void main(String[] args) {	
+    	        Date d = new Date();
+    	        System.out.println(df.format(d));
 	}
 
 }

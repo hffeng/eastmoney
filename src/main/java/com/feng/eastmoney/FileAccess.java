@@ -9,13 +9,12 @@ import java.io.OutputStreamWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-/**
- * @Date 2021/1/27
- *
- */
+/*
+  @Author fenghf
+  @Date 2021/1/27
+*/
 public class FileAccess {
-	
+
 	 public static void method1(String file, String conent) {     
 	        BufferedWriter out = null;     
 	        try {     
